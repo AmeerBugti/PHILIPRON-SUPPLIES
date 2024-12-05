@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHILIPRON SUPPLIES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('equipment-background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        header {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            padding: 20px;
+        }
+        header img {
+            width: 200px; /* Increase the logo size */
+            height: auto;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            font-size: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #128C7E;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for content */
+            border-radius: 10px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .contact-btn:hover {
+            background-color: #128C7E;
+        }
+        .marquee {
+            font-size: 20px;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee p {
+            display: inline-block;
+            animation: marquee 20s linear infinite; /* Slower speed */
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .section h2 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Marquee Text -->
+    <div class="marquee">
+        <p>Supplying Excellence, Delivering Success | Your One-Stop Supply Solution | Reliable Supplies, Unbeatable Quality.</p>
+    </div>
+
+    <!-- Header with Logo -->
+    <header>
+        <img src="company-logo.png" alt="PHILIPRON SUPPLIES Logo"> <!-- Add your logo image here -->
+        <h1>PHILIPRON SUPPLIES</h1>
+        <p>Your Trusted Supplier for Machinery, Plastic Materials & Petroleum Products</p>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="javascript:void(0);" onclick="showContent('machinery')">Machinery Products</a>
+        <a href="javascript:void(0);" onclick="showContent('plastic')">Plastic Materials</a>
+        <a href="javascript:void(0);" onclick="showContent('petroleum')">Petroleum Products</a>
+    </div>
+
+    <!-- Content Sections (Initially Hidden) -->
+    <div id="machinery" class="content section">
+        <h2>Machinery Products</h2>
+        <img src="machinery-image.jpg" alt="Machinery Products">
+        <p>
+            At PHILIPRON SUPPLIES, we offer a wide range of machinery products designed to meet the needs of various industries. Whether you’re in construction, manufacturing, or agriculture, our machinery products are built to ensure productivity and efficiency. Our offerings include high-quality industrial machinery, tools, and equipment for various operations. From heavy machinery like excavators and loaders to specialized equipment like CNC machines, we supply products that are durable and reliable.
+            We understand that each industry has specific requirements, so we work closely with you to provide tailored machinery solutions. Our products are sourced from top manufacturers to ensure they meet international standards. Our machinery can be used across a variety of industries, making us your trusted partner for all your industrial equipment needs.
+            Our team is available to discuss your requirements and guide you toward the best machinery options for your business.
+        </p>
+        <a href="https://wa.me/923114892497" class="contact-btn">Contact via WhatsApp</a>
+    </div>
+
+    <div id="plastic" class="content section">
+        <h2>Plastic Materials</h2>
+        <img src="plastic-materials-image.jpg" alt="Plastic Materials">
+        <p>
+            We specialize in supplying high-quality plastic materials suitable for a range of industrial and commercial applications. Whether you need plastic for manufacturing, packaging, or construction, we have a wide selection of materials to meet your needs. Our plastic materials are sourced from reputable suppliers and are available in various forms, including sheets, rods, films, and granules. 
+            Our plastic materials are durable, versatile, and cost-effective, offering solutions for businesses of all sizes. Whether you're looking for polyethylene, polypropylene, PVC, or specialized plastics, we have the expertise to provide exactly what you need. Our products are known for their longevity and high performance, helping your business maintain efficiency and meet quality standards.
+            Reach out today to discuss your plastic material needs and how we can help you find the right product for your business.
+        </p>
+        <a href="https://wa.me/923114892497" class="contact-btn">Contact via WhatsApp</a>
+    </div>
+
+    <div id="petroleum" class="content section">
+        <h2>Petroleum Products</h2>
+        <img src="petroleum-products-image.jpg" alt="Petroleum Products">
+        <p>
+            Our petroleum products include a wide array of high-quality fuels, oils, and lubricants. From fuel for transportation to lubricants for machinery, we provide products that ensure optimal performance for various industries. Our offerings include gasoline, diesel, motor oil, hydraulic fluid, and specialty lubricants, all sourced from top-tier suppliers to ensure reliability and efficiency.
+            We understand that petroleum products play a critical role in keeping industries running smoothly, and that’s why we prioritize quality and consistency in everything we supply. Whether you're a manufacturing company, transport service, or energy provider, we offer petroleum solutions tailored to your needs. Our products are available in bulk or customized quantities, allowing flexibility for different requirements.
+            For expert advice and to place an order, please get in touch with us today.
+        </p>
+        <a href="https://wa.me/923114892497" class="contact-btn">Contact via WhatsApp</a>
+    </div>
+
+    <!-- Script to Show Content -->
+    <script>
+        function showContent(section) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.content');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+
+            // Show the clicked section
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
